@@ -6,7 +6,7 @@ import EmptyBongoCat from "../../Ui/EmptyState/EmptyBongoCat";
 import { Calendar1 } from "iconsax-react";
 import { Empty } from "@douyinfe/semi-ui";
 import { IconCaretdown } from "@douyinfe/semi-icons";
-import RichTextEditor1 from "../../../actions/RichTextEditor/RichTextEditor1";
+import RichTextEditor1 from "../../RichTextEditor/RichTextEditor1";
 import FadingBalls from "react-cssfx-loading/lib/FadingBalls";
 
 const emptyStyle = {

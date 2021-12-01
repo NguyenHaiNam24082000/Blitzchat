@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Dock from "../../actions/Dock/Dock";
+import Dock from "../Dock/Dock";
 import "./Note.css";
 import Selecto from "react-selecto";
 import { Banner } from "@douyinfe/semi-ui";
