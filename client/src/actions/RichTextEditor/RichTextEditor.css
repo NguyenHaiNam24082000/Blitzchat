@@ -1,0 +1,18 @@
+.public-DraftEditorPlaceholder-root {
+  color: rgb(186, 186, 193);
+  position: absolute;
+  user-select: none;
+}
+.DraftEditor-root {
+  height: 85px;
+  max-height: 85px;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+code {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.05) !important;
+  width: 100%;
+  padding: 2px;
+}

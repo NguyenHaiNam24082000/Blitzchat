@@ -1,0 +1,44 @@
+.container {
+  position: absolute;
+  margin-bottom: 0.3rem;
+  bottom: 0;
+  left: 0;
+  z-index: 9900;
+  width: 100%;
+  height: 5.2rem;
+  padding: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dockEl {
+  background-color: #ffffff;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+  position: relative;
+  padding: 0.3rem;
+  /* border-radius: 1.2rem; */
+  border: 1px solid #ededed;
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+/* .dockEl::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: inherit;
+  backdrop-filter: blur(10px);
+  border-radius: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+} */
+.divider {
+  height: 90%;
+  width: 1.5px;
+  background-color: #ededed;
+  margin: auto 4px;
+}

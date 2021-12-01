@@ -1,0 +1,19 @@
+.editor {
+  cursor: text;
+}
+
+.editor :global(.public-DraftEditor-content) {
+  min-height: 85px;
+}
+.popup {
+  /* display: none; */
+  visibility: hidden;
+    opacity: 0;
+  z-index: 100 !important;
+  position: absolute;
+  left: -105px !important;
+  bottom: 4px !important;
+  inset: none !important;
+  transition: opacity 0.25s cubic-bezier(0.3, 1.2, 0.2, 1);
+  box-sizing: border-box;
+}

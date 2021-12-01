@@ -1,0 +1,4 @@
+.mantine-Menu-itemLabel >div
+{
+    @apply w-full h-full;
+}

@@ -1,0 +1,18 @@
+.slider .rangeslider {
+  @apply bg-gray-300 w-full h-7 m-0 rounded-full border-transparent;
+}
+
+.slider .rangeslider .rangeslider__fill {
+  @apply bg-white shadow-none rounded-none rounded-l-full;
+}
+
+.slider .rangeslider .rangeslider__handle {
+  @apply outline-none h-7 w-7 flex items-center justify-center;
+  background-color: #fff;
+  color: #fff;
+  /* box-shadow: -3px 0px 8px 0px rgba(17, 17, 17, 0.15); */
+}
+
+.slider .rangeslider .rangeslider__handle::after {
+  @apply hidden;
+}

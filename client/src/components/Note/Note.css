@@ -1,0 +1,43 @@
+[contenteditable] {
+  cursor: text;
+}
+[contenteditable][placeholder]:empty:before {
+  content: attr(placeholder);
+  position: absolute;
+  color: gray;
+  background-color: transparent;
+}
+
+/* EDITABLE BLOCK*/
+
+.editor-block {
+  position: relative;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  /* background: #fafafa; */
+  background: inherit;
+  border-radius: 0.25rem;
+
+  transition: filter 2s ease,-webkit-filter 2s ease, font-size 0.3s linear, line-height 0.3s linear;
+  /* filter: blur(4px) opacity(0.3); */
+}
+.editor-block:hover {
+  background: #f8f8f8;
+  outline-color: #f5f6fb;
+
+  /* filter: blur(0px) opacity(1); */
+  /* transition-duration: 200ms; */
+}
+.editor-block:focus {
+  background: #f3f3f3;
+}
+
+.editor-selected
+{
+    background: rgb(159, 210, 252);
+}
+
+.semi-banner-content-wrapper
+{
+  @apply w-full;
+}

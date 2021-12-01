@@ -1,0 +1,43 @@
+.blockType {
+  box-sizing: border-box;
+  border: 1px solid rgb(196, 193, 193);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  margin-right: -8px;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 28px;
+  width: 28px;
+  box-shadow: 0px 1px 3px 0px rgba(220, 220, 220, 1);
+}
+
+.blockType svg {
+  fill: #ddd;
+}
+
+.spacer {
+  position: absolute;
+  right: -10px !important;
+  transform: none !important;
+  z-index: 100 !important;
+}
+
+.popup:hover,.popup>div::before,.popup[data-show=true] {
+  visibility: visible;
+      opacity: 1;
+}
+
+.popup {
+  /* display: none; */
+  visibility: hidden;
+    opacity: 0;
+  z-index: 100 !important;
+  position: absolute;
+  left: -105px !important;
+  bottom: 4px !important;
+  inset: none !important;
+  transition: opacity 0.25s cubic-bezier(0.3, 1.2, 0.2, 1);
+  box-sizing: border-box;
+}

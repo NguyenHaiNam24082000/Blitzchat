@@ -1,0 +1,14 @@
+.wrapper {
+  position: absolute;
+  z-index: 100;
+}
+
+.toolbar {
+  left: 50%;
+  transform: translate(-50%) scale(0);
+  position: absolute;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px 0px rgba(220, 220, 220, 1);
+  z-index: 200;
+  box-sizing: border-box;
+}

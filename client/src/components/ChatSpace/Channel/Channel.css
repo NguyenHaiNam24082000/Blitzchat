@@ -1,0 +1,14 @@
+.semi-tree-option-level-2 .options {
+  display: none;
+}
+.semi-tree-option-level-2:hover .options,
+.semi-tree-option-selected .options {
+  @apply flex items-center;
+}
+
+.semi-tree-option-list {
+  padding: 0 !important;
+}
+.semi-tree-option-level-2:not(.semi-tree-option-collapsed) .semi-avatar-group {
+  display: none !important;
+}

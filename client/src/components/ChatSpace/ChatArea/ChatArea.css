@@ -1,0 +1,36 @@
+.channel__body__grouped {
+  @apply w-full;
+  margin: 25px 0;
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 18px,
+    var(--gray-outline) 18px,
+    var(--gray-outline) 19px,
+    transparent 19px
+  );
+}
+.channel__body__grouped:last-child {
+  margin: 25px 0 0;
+}
+
+.channel__body__day {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+}
+.channel__body__date {
+  text-align: center;
+  margin: 0px 0;
+}
+.channel__body__date .channel__body__date__child {
+  user-select: none;
+  background: #fff;
+  font-weight: 700;
+  padding: 5px 15px 5px 18px;
+  border: 1px solid var(--gray-outline);
+  display: inline-block;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
