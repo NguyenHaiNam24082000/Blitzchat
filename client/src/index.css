@@ -101,3 +101,17 @@ code {
   --button-anchor-color-hover: #f1bfa0;
   --button-anchor-border: 1px solid #8c633c;
 }
+
+.semi-navigation-list > .semi-navigation-item-normal {
+  height: 28px !important;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 4px ;
+}
+
+.semi-navigation-sub-title
+{
+  height: 28px !important;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}

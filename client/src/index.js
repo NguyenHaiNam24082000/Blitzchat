@@ -19,12 +19,31 @@ import pt_BR from "@douyinfe/semi-ui/lib/es/locale/source/pt_BR";
 import zh_TW from "@douyinfe/semi-ui/lib/es/locale/source/zh_TW";
 import ar from "@douyinfe/semi-ui/lib/es/locale/source/ar";
 import { LocaleProvider } from "@douyinfe/semi-ui";
-import { I18nextProvider } from "react-i18next";
-import i18next from "i18next";
+import { I18nextProvider, initReactI18next } from "react-i18next";
+import i18n from "i18next";
 import { MantineProvider } from "@mantine/core";
 import { ModalsProvider } from "@mantine/modals";
+import { NotificationsProvider } from "@mantine/notifications";
 
-i18next.init({
+i18n.use(initReactI18next).init({
+  resources: {
+    en_GB,
+    en_US,
+    ko_KR,
+    ja_JP,
+    vi_VN,
+    ru_RU,
+    id_ID,
+    ms_MY,
+    th_TH,
+    tr_TR,
+    pt_BR,
+    zh_TW,
+    ar,
+    zh_CN,
+  },
+  lng: "zh_CN",
+  fallbackLng: "zh_CN",
   interpolation: { escapeValue: false }, // React already does escaping
 });
 
@@ -49,11 +68,13 @@ ReactDOM.render(
   <React.StrictMode>
     <RecoilRoot>
       <LocaleProvider locale={language["en_US"]}>
-        <I18nextProvider i18n={i18next}>
+        <I18nextProvider i18n={i18n}>
           <MantineProvider>
-            <ModalsProvider>
-              <App />
-            </ModalsProvider>
+            <NotificationsProvider>
+              <ModalsProvider>
+                <App />
+              </ModalsProvider>
+            </NotificationsProvider>
           </MantineProvider>
         </I18nextProvider>
       </LocaleProvider>

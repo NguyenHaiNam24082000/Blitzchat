@@ -1,0 +1,110 @@
+.channel__body__grouped {
+  @apply w-full;
+  margin: 25px 0;
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 18px,
+    var(--gray-outline) 18px,
+    var(--gray-outline) 19px,
+    transparent 19px
+  );
+}
+.channel__body__grouped:last-child {
+  margin: 25px 0 0;
+}
+
+.channel__body__day {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+}
+.channel__body__date {
+  text-align: center;
+  margin: 0px 0;
+}
+.channel__body__date .channel__body__date__child {
+  user-select: none;
+  background: #fff;
+  font-weight: 700;
+  padding: 5px 15px 5px 18px;
+  border: 1px solid var(--gray-outline);
+  display: inline-block;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.slider-bookmark {
+  cursor: grab;
+  position: absolute !important;
+}
+.slider-bookmark:active {
+  cursor: grabbing;
+}
+.slider-bookmark > div {
+  align-items: center;
+}
+.slider-bookmark > [data-arrow="left"] {
+  background: linear-gradient(90deg, #fff 10%, rgba(255, 255, 255, 0));
+  top: 0px;
+  left: 0;
+  opacity: 1;
+  height: 34px;
+  width: 88px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+.slider-bookmark > [data-arrow="left"] > button {
+  background: url("https://cdn.dsmcdn.com/web/production/slick-arrow.svg")
+    no-repeat center;
+  transform: rotateZ(180deg) scale(0.5);
+  height: 32px;
+  width: 15px;
+  margin-left: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider-bookmark > [data-arrow="right"] {
+  background: linear-gradient(270deg, #fff 10%, rgba(255, 255, 255, 0));
+  right: 0;
+  opacity: 1;
+  height: 34px;
+  width: 88px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+.slider-bookmark > [data-arrow="right"] > button {
+  background: url("https://cdn.dsmcdn.com/web/production/slick-arrow.svg")
+    no-repeat;
+  height: 32px;
+  width: 15px;
+  transform: scale(0.5);
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+}
+
+.badge-message {
+  will-change: transform;
+  z-index: 0;
+  transition: transform 0.1s linear;
+}
+
+.chat-content:hover .badge-message{
+  @apply translate-y-0;
+}
+.badge-abc
+{
+  z-index: 0!important;
+}

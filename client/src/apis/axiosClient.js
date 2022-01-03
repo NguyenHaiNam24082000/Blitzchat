@@ -11,6 +11,11 @@ const axiosClient = axios.create({
   },
 });
 
+//All request will wait 2 seconds before timeout
+axiosClient.defaults.timeout = 2000;
+
+axiosClient.defaults.withCredentials = true;
+
 // Add a request interceptor
 axiosClient.interceptors.request.use(
   function (config) {

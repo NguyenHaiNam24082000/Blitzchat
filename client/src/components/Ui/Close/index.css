@@ -1,0 +1,64 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.icon .first:before, .icon .first:after,
+.icon .second:before, .icon .second:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #5ab3e4;
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  transition: all 0.2s linear;
+}
+.icon .first:before {
+  top: 1.5px;
+  left: 1.5px;
+}
+.icon .first:after {
+  top: 1.5px;
+  right: 1.5px;
+  transform: rotate(-45deg);
+}
+.icon .second:before {
+  bottom: 1.5px;
+  left: 1.5px;
+}
+.icon .second:after {
+  bottom: 1.5px;
+  right: 1.5px;
+}
+.icon.active > :before, .icon.active > :after {
+  background: #A4B0C3;
+}
+.icon.active .first:before {
+  transform: rotate(45deg);
+  height: 4px;
+  width: 14px;
+  top: 11px;
+  left: 6px;
+}
+.icon.active .first:after {
+  transform: rotate(-45deg);
+  height: 4px;
+  width: 14px;
+  top: 11px;
+  right: 6px;
+}
+.icon.active .second:before {
+  transform: rotate(-45deg);
+  height: 4px;
+  width: 14px;
+  bottom: 11px;
+  left: 6px;
+}
+.icon.active .second:after {
+  transform: rotate(45deg);
+  height: 4px;
+  width: 14px;
+  bottom: 11px;
+  right: 6px;
+}

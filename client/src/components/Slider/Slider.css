@@ -16,3 +16,8 @@
 .slider .rangeslider .rangeslider__handle::after {
   @apply hidden;
 }
+
+.rangeslider__handle-tooltip
+{
+  background: red;
+}
