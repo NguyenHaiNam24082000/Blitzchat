@@ -53,6 +53,7 @@ import {
   ClipboardIcon,
 } from "@modulz/radix-icons";
 import { Slider, RangeSlider } from "@mantine/core";
+import DocViewer, { PDFRenderer, PNGRenderer } from "react-doc-viewer";
 
 const emptyStyle = {
   padding: 30,
@@ -362,6 +363,14 @@ export default function ChatArea() {
               </div>
             </div>
             <div className="chat-content relative flex-shrink-0">
+              {/* <DocViewer
+                documents={[
+                  {
+                    uri: "https://trello.com/1/cards/6141bd25ea603249484d3d9f/attachments/61484ae886e3e7751eb953a9/download/LaiThiPhuong-Login_Register.pdf",
+                  },
+                ]}
+                pluginRenderers={[PDFRenderer, PNGRenderer]}
+              /> */}
               <div className="z-50">Hello</div>
               <div className="badge-abc absolute flex items-start left-0 bottom-full ml-5 h-5">
                 <div className="flex items-center bg-red-500 transform badge-message w-10 h-full flex-col translate-y-4 rounded-t">
@@ -914,7 +923,11 @@ export default function ChatArea() {
         title="Add member"
         zIndex={99999}
       >
-        <Calendar fullWidth={true} size="lg" classNames={{monthPicker:"w-full"}}/>
+        <Calendar
+          fullWidth={true}
+          size="lg"
+          classNames={{ monthPicker: "w-full" }}
+        />
       </Modal>
     </div>
   );

@@ -4,7 +4,7 @@
   user-select: none;
 }
 .DraftEditor-root {
-  height: 85px;
+  height: 42.5px;
   max-height: 85px;
   overflow-y: auto;
   flex-shrink: 0;

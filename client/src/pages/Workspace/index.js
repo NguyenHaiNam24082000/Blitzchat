@@ -64,12 +64,12 @@ function Workspace() {
             >
               {/* <img src={Bell} alt="bell" className="w-5 h-5" /> */}
               <Channel />
-              {/* <ChatArea /> */}
+              <ChatArea />
               {/* <Complementary />  */}
               {/* <Note /> */}
               {/* {JSON.stringify(location, null, 2)}
               {JSON.stringify(networkState, null, 2)} */}
-              <VideoCall />
+              {/* <VideoCall /> */}
               {/* <Paint /> */}
             </Content>
           </Layout>

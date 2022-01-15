@@ -8,7 +8,7 @@ const PORT = 9000;
 const connectDB = async () => {
     try {
         await mongoose.connect(
-            "mongodb+srv://nguyennam2000:H%40inam24082000@blitzchat.5woc5.mongodb.net/blitzchat?retryWrites=true&w=majority",
+            "",
             {
                 useNewUrlParser: true,
                 // useCreateIndex: true,
